@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-height: 100vh;
+  letter-spacing: 2px;
+  background-color: #6CA6C1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.box {
+  background-color: #FFFCE8;
+  height: 260px;
+  width: 400px;
+  text-align: center;
+  border: 15px double black;
+  background-clip: content-box;
+}
+
+.title h1 {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 10px 0;
+}
+
+.watch .time p {
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+
+.watch .icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icons .bi-stop-circle, .bi-arrow-repeat {
+  width: 30px;
+}
+
+.icons .bi-stop-circle, .bi-play-circle-fill, .bi-arrow-repeat {
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.watch .icons .bi-play-circle-fill {
+  width: 50px;
+  color: rgb(255, 69, 0);
+}
+
+.watch .icons .bi-stop-circle:hover {
+  color: rgb(255, 69, 0);
+  scale: 1.1;
+}
+
+.watch .icons .bi-stop-circle:active {
+  scale: 1;
+}
+
+.watch .icons .bi-arrow-repeat:hover {
+  color: rgb(255, 69, 0);
+  scale: 1.1;
+}
+
+.watch .icons .bi-arrow-repeat:active {
+  scale: 1;
+}
+
+.watch .icons .bi-play-circle-fill:hover {
+  scale: 1.1;
+}
+
+.watch .icons .bi-play-circle-fill:active {
+  scale: 1;
+}
+
+@media only screen and (max-width: 300px) {
+  .box {
+    height: 350px;
+    width: 400px;
+  }
+
+  .title h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 500px) {
+  .box {
+    height: 350px;
+    width: 400px;
+  }
+
+  .title h1 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
